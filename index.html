@@ -1,14 +1,383 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>품앗이 (Paying It Forward) - 비영리 교육 단체</title>
   <link href='/style.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">품앗이 <span>PIF</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">단체 소개</a></li>
+        <li><a href="#mentors" class="nav-link">임원진</a></li>
+        <li><a href="#camp" class="nav-link">진로 캠프</a></li>
+        <li><a href="#programs" class="nav-link">프로그램</a></li>
+        <li><a href="#reviews" class="nav-link">후기</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">참여하기</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-label">Paying It Forward</p>
+      <h1 class="hero-title">품앗이</h1>
+      <p class="hero-subtitle">현직 직장인들이 직접 참여하는<br>인문학·사회학 교육 및 실무 중심 교육을 제공하는 비영리 단체</p>
+      <div class="hero-actions">
+        <a href="#programs" class="btn btn-primary">프로그램 보기</a>
+        <a href="#about" class="btn btn-outline">더 알아보기</a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">품앗이는...</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="about-lead">
+            현직 직장인들이 직접 참여하는 인문학·사회학 교육 및 실무 중심 교육을 제공하는 NGO입니다.
+          </p>
+          <p class="about-text">
+            품앗이는 연세대학교 사회혁신학회(SICA)와 통일 관련 중앙동아리 통일한마당 소속 활동원들이 졸업 후 설립한 비영리 단체입니다.
+            학생의 신분을 벗어나 직장인으로서 보유하고 있는 네트워크와 하드스킬을 기반으로 사회 구성원들에게 실질적인 도움과 수준 높은 교육 커리큘럼을 제공하고자 하는 목표로 시작되었습니다.
+          </p>
+          <p class="about-text">
+            자체 품앗이 진로캠프 및 탈북민, 다문화, 저소득층 청년들을 대상으로 한 비영리단체와의 워크샵 진행을 하고 있습니다.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-number">9</div>
+            <div class="stat-label">교육 프로그램</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">전문 멘토</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">SICA</div>
+            <div class="stat-label">연세대 사회혁신학회 출신</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mentors Section -->
+  <section class="section section-alt" id="mentors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Mentors</span>
+        <h2 class="section-title">품앗이 임원진 소개</h2>
+      </div>
+      <div class="mentors-grid">
+        <!-- Mentor 1 -->
+        <div class="mentor-card">
+          <div class="mentor-avatar">
+            <div class="mentor-avatar-placeholder">장</div>
+          </div>
+          <h3 class="mentor-name">장한결 멘토</h3>
+          <p class="mentor-position">비자카드 컨설턴트 재직 중</p>
+          <ul class="mentor-details">
+            <li><strong>근무 경험</strong></li>
+            <li>북한인권, 통일 NGO 인턴 다수</li>
+            <li>전략컨설팅 인턴</li>
+            <li>사모펀드 인턴</li>
+            <li>(전) 연세대학교 통일한마당 회장</li>
+          </ul>
+          <p class="mentor-edu">연세대학교 사회학과 졸업</p>
+        </div>
+        <!-- Mentor 2 -->
+        <div class="mentor-card">
+          <div class="mentor-avatar">
+            <div class="mentor-avatar-placeholder">백</div>
+          </div>
+          <h3 class="mentor-name">백민하 멘토</h3>
+          <p class="mentor-position">롯데호텔앤리조트 개발부문 근무 중</p>
+          <ul class="mentor-details">
+            <li><strong>근무 경험</strong></li>
+            <li>스타트업 액셀러레이팅 인턴</li>
+            <li>미국 스타트업 프리랜서</li>
+            <li>통번역 프리랜서 및 한국어 강사</li>
+            <li>서울시 관광호텔업 예비인턴 프로그램 멘토</li>
+          </ul>
+          <p class="mentor-edu">연세대학교 아시아학과 졸업</p>
+        </div>
+        <!-- Mentor 3 -->
+        <div class="mentor-card">
+          <div class="mentor-avatar">
+            <div class="mentor-avatar-placeholder">고</div>
+          </div>
+          <h3 class="mentor-name">고희경 멘토</h3>
+          <p class="mentor-position">씨티은행 기업금융그룹 근무 중</p>
+          <ul class="mentor-details">
+            <li><strong>근무 경험</strong></li>
+            <li>AI 스타트업 마케팅 및 사업 전략 인턴</li>
+            <li>전략컨설팅 인턴</li>
+            <li>벤처케피탈 인턴</li>
+            <li>(전) 연세대 사회혁신학회 (SICA) 9기 부학회장</li>
+          </ul>
+          <p class="mentor-edu">연세대학교 UD 경제학, 응용통계학과 졸업</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Camp Section -->
+  <section class="section" id="camp">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Career Camp</span>
+        <h2 class="section-title">품앗이 진로 캠프</h2>
+      </div>
+      <div class="camp-content">
+        <div class="camp-info">
+          <h3>품앗이 진로 캠프란?</h3>
+          <p>
+            탈북민 대학생·청년들을 위한 진로 역량 강화 프로그램으로, 실제 사회에서 일하고 있는 직장인 멘토들이 직접 기획하고 진행합니다.
+            직접 취업을 준비하고 회사에서 일해본 경험을 바탕으로 실질적으로 도움이 되는 취업 스킬을 알려드리고자 합니다.
+          </p>
+
+          <div class="camp-features">
+            <div class="camp-feature">
+              <div class="feature-icon">&#x1F393;</div>
+              <div>
+                <h4>맞춤형 교육</h4>
+                <p>참석하는 학생들이 가장 궁금해할 만한 부분들을 상세하게 반영하여 맞춤형 교육을 제공합니다.</p>
+              </div>
+            </div>
+            <div class="camp-feature">
+              <div class="feature-icon">&#x1F91D;</div>
+              <div>
+                <h4>1:1 멘토링</h4>
+                <p>현직자와 1:1 멘토링을 통해 구체적인 진로정보를 얻을 수 있습니다.</p>
+              </div>
+            </div>
+            <div class="camp-feature">
+              <div class="feature-icon">&#x1F4DA;</div>
+              <div>
+                <h4>실제 예시 기반 교육</h4>
+                <p>실제 예시들을 기반으로 한 취업 진로 교육을 제공하며, 다양한 교육 사이트 링크 및 참고 자료를 제공합니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="camp-partners">
+            <h4>협력 단체</h4>
+            <p>한국교육개발원(KEDI), 이화여자대학교</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="section section-alt" id="programs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Programs</span>
+        <h2 class="section-title">교육 프로그램</h2>
+        <p class="section-desc">2025말 - 2026초 진행 예정이며, 다양한 협력 단체들과 의견 나누며 학생들에게 도움될 교육을 제공하고자 합니다.</p>
+      </div>
+      <div class="programs-grid">
+        <!-- Program 1 -->
+        <div class="program-card" data-num="01">
+          <div class="program-tag">토론</div>
+          <h3>토론 기초</h3>
+          <p>논리적으로 생각하고 설득력 있게 말하기</p>
+          <ul class="program-topics">
+            <li>토론의 필요성과 다양한 토론 방식</li>
+            <li>현명한 판단 내리기</li>
+            <li>올바른 정보 수집하기</li>
+            <li>논리 만들기</li>
+          </ul>
+          <span class="program-target">대상: 초, 중, 고등학생</span>
+        </div>
+        <!-- Program 2 -->
+        <div class="program-card" data-num="02">
+          <div class="program-tag">사회학</div>
+          <h3>대학 수업 미리 듣기 - 사회학 편</h3>
+          <p>비판적으로 사고하고 사회를 읽어내기</p>
+          <ul class="program-topics">
+            <li>사회학 소개 - 기본편</li>
+            <li>사회적 쟁점 (디지털 사회학, 현대 사회와 정체성 등)</li>
+          </ul>
+          <span class="program-target">대상: 중, 고등학생, 취준생</span>
+        </div>
+        <!-- Program 3 -->
+        <div class="program-card" data-num="03">
+          <div class="program-tag">인문학</div>
+          <h3>대학 수업 미리 듣기 - 인문학 편</h3>
+          <p>비판적으로 읽고 철학적으로 사유하기</p>
+          <ul class="program-topics">
+            <li>인문학 소개 - 문학, 사학, 철학, 신학</li>
+            <li>인문학 명강의 수강하기</li>
+            <li>학습 내용 발표 및 토론</li>
+          </ul>
+          <span class="program-target">대상: 중, 고등학생, 취준생, 대학생</span>
+        </div>
+        <!-- Program 4 -->
+        <div class="program-card" data-num="04">
+          <div class="program-tag">경영학</div>
+          <h3>대학 수업 미리 듣기 - 경영학 편</h3>
+          <p>전략적으로 분석하고 의사결정하기</p>
+          <ul class="program-topics">
+            <li>경영학과 직무와 진로 로드맵</li>
+            <li>마케팅, 비즈니스, 조직, 재무</li>
+            <li>실무에 필요할 경영 지식</li>
+          </ul>
+          <span class="program-target">대상: 상경 비전공자, 취업준비생</span>
+        </div>
+        <!-- Program 5 -->
+        <div class="program-card" data-num="05">
+          <div class="program-tag">비즈니스</div>
+          <h3>쉽게 배우는 비즈니스 용어들</h3>
+          <p>실무 용어를 습득하고 상황에 맞게 활용하기</p>
+          <ul class="program-topics">
+            <li>비즈니스 기본 용어와 문서 예절</li>
+            <li>업무 프로세스 관련 용어</li>
+            <li>실전 활용 연습</li>
+            <li>조직 문화 관련 용어 이해</li>
+          </ul>
+          <span class="program-target">대상: 신입 직장인, 취업준비생</span>
+        </div>
+        <!-- Program 6 -->
+        <div class="program-card" data-num="06">
+          <div class="program-tag">문서작성</div>
+          <h3>비즈니스 문서 작성 요령</h3>
+          <p>명확하게 구조화하고 설득력 있게 작성하기</p>
+          <ul class="program-topics">
+            <li>비즈니스 문서의 이해와 기초</li>
+            <li>문서 작성의 기본 원칙</li>
+            <li>문서 유형별 작성법</li>
+            <li>실무 문서 작성 실습</li>
+          </ul>
+          <span class="program-target">대상: 신입 직장인, 취업준비생</span>
+        </div>
+        <!-- Program 7 -->
+        <div class="program-card" data-num="07">
+          <div class="program-tag">PPT</div>
+          <h3>칭찬받는 회사 PPT / 발표 자료 만들기</h3>
+          <p>효과적으로 시각화하고 설득력 있게 구성하기</p>
+          <ul class="program-topics">
+            <li>우수 장표 분석 및 PPT 구조와 특징</li>
+            <li>장표 시각화 팁 학습</li>
+            <li>프로토타입 활용 101 (ChatGPT 활용)</li>
+            <li>실습 세션</li>
+          </ul>
+          <span class="program-target">대상: 모든 직장인, 학생</span>
+        </div>
+        <!-- Program 8 -->
+        <div class="program-card" data-num="08">
+          <div class="program-tag">엑셀</div>
+          <h3>회사에서 필요한 엑셀 101</h3>
+          <p>데이터를 가공하고 비즈니스 인사이트 찾기</p>
+          <ul class="program-topics">
+            <li>엑셀 기본기 학습 (셀 서식, 데이터 정리)</li>
+            <li>함수 이해: SUM, IF, VLOOKUP, INDEX/MATCH</li>
+            <li>데이터 분석 스킬</li>
+            <li>엑셀 → PPT 정보로 시각화</li>
+          </ul>
+          <span class="program-target">대상: 사무직군 취업준비생</span>
+        </div>
+        <!-- Program 9 -->
+        <div class="program-card" data-num="09">
+          <div class="program-tag">AI</div>
+          <h3>AI 똑똑하게 사용하기</h3>
+          <p>전략적으로 질문하고 AI로 생산성 높이기</p>
+          <ul class="program-topics">
+            <li>AI 프로그램 종류 탐색 (Gemini, ChatGPT, Perplexity 등)</li>
+            <li>AI 사용시 주의사항 (Hallucination, 보안)</li>
+            <li>'잘' 질문하는 법 - 프롬프트 탐색</li>
+            <li>AI 활용 사례 실습</li>
+          </ul>
+          <span class="program-target">대상: 직장인, 취업준비생, 학생</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">품앗이 활동 후기들</h2>
+        <p class="section-desc">품앗이 활동에 참여한 이들의 후기를 보면서 그동안 활동 보완 및 다음 활동 기획을 위한 원동력을 많이 얻어가고 있습니다.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"너무 감사드립니다~~~~ 바쁜 주말에 시간 내주셔서 감사드리고, 또 유용한 정보들로서 공유의 준비 해 주셔서 너무 너무 도움이 많이 됐습니다."</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"3분 모두에게 진심으로 너무너무 감사의 말씀 드립니다야:) 덕분에 좀 취업이나 고민하고 있던 부분들을 정리 할 수 있는 시간이었습니다."</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"참석자들의 배경을 고려해서 세심하게 잘 준비해주신 덕분에 현장 반응도 좋았고 유의미한 결과가 나온것 같습니다."</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">"1일차 저녁식사 시간부터 참석자들에게 먼저 적극적으로 다가가 주시고 쉽게 마음의 문을 열 수 있도록 해주셔서 감사합니다. 프로그램 진행 중에도 느껴지는 열정과 사명감에 저도 많이 배우는 시간이 되었습니다."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA Section -->
+  <section class="section section-cta" id="contact">
+    <div class="container">
+      <h2 class="cta-title">함께 성장하는 품앗이가 되고자 합니다</h2>
+      <p class="cta-text">
+        앞으로 더 많은 학생 및 청년들에게 긍정적인 영향력을 주고, 그 친구들이 성장하여 다른 곳에서 품앗이 할 수 있도록 오늘도 열심히 준비하는 품앗이가 되고자 합니다.
+      </p>
+      <a href="mailto:pif.payingitforward@gmail.com" class="btn btn-primary btn-lg">문의하기</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>품앗이 <span>PIF</span></h3>
+          <p>Paying It Forward</p>
+        </div>
+        <div class="footer-info">
+          <p>연세대학교 사회혁신학회(SICA) · 통일한마당 출신</p>
+          <p>비영리 교육 단체 (NGO)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 품앗이 (Paying It Forward). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
